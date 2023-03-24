@@ -90,9 +90,8 @@ def move():
             y = randrange(-150, 150)
             target.x = 190
             target.y = y
-            
-    ontimer(move, 20)
 
+    ontimer(move, 20)
 
 setup(420, 420, 370, 0)
 hideturtle()
