@@ -85,11 +85,11 @@ def move():
     # Las bolas reaparecen del otro lado cuando
     # se salen de la pantalla, haciendo al juego
     # infinito.
-    #for target in targets:
-        #if not inside(target):
-            #y = randrange(-150, 150)
-            #target.x = 190
-            #target.y = y
+    for target in targets:
+        if not inside(target):
+            y = randrange(-150, 150)
+            target.x = 190
+            target.y = y
 
     ontimer(move, 20)
 
